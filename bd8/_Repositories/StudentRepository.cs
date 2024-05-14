@@ -159,7 +159,7 @@ namespace bd8._Repositories
             return studentList;
         }
 
-        public IEnumerable<StudentModel> SortBySurname() // Метод для сортування таблиці по прізвищу (А-Я)
+        public IEnumerable<StudentModel> SortBySurname() // Sorting table by surname (A-Z)
         {
             var studentList = new List<StudentModel>();
 
@@ -195,7 +195,7 @@ namespace bd8._Repositories
             return studentList;
         }
 
-        public IEnumerable<StudentModel> SortByName() // Метод для сортування таблиці по імені (А-Я)
+        public IEnumerable<StudentModel> SortByName() // Sorting table by name (A-Z)
         {
             var studentList = new List<StudentModel>();
 

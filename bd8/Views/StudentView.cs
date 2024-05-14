@@ -94,11 +94,6 @@ namespace bd8.Views
             };
         }
 
-        public string IdStudent
-        {
-            get { return txtStudentID.Text; }
-            set { txtStudentID.Text = value; }
-        }
         public string Surname
         {
             get { return txtStudentSurname.Text; }

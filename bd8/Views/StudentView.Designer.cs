@@ -44,8 +44,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtStudentSearch = new System.Windows.Forms.TextBox();
             this.tabStudentDetails = new System.Windows.Forms.TabPage();
-            this.txtStudentID = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtStudentForm = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtStudentGender = new System.Windows.Forms.TextBox();
@@ -158,7 +156,7 @@
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Source Sans Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1475, 436);
+            this.label10.Location = new System.Drawing.Point(1474, 436);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(144, 31);
             this.label10.TabIndex = 8;
@@ -274,8 +272,6 @@
             // 
             // tabStudentDetails
             // 
-            this.tabStudentDetails.Controls.Add(this.txtStudentID);
-            this.tabStudentDetails.Controls.Add(this.label9);
             this.tabStudentDetails.Controls.Add(this.txtStudentForm);
             this.tabStudentDetails.Controls.Add(this.label8);
             this.tabStudentDetails.Controls.Add(this.txtStudentGender);
@@ -293,32 +289,14 @@
             this.tabStudentDetails.Location = new System.Drawing.Point(4, 34);
             this.tabStudentDetails.Name = "tabStudentDetails";
             this.tabStudentDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabStudentDetails.Size = new System.Drawing.Size(1521, 795);
+            this.tabStudentDetails.Size = new System.Drawing.Size(1670, 817);
             this.tabStudentDetails.TabIndex = 1;
             this.tabStudentDetails.Text = "Деталі";
             this.tabStudentDetails.UseVisualStyleBackColor = true;
             // 
-            // txtStudentID
-            // 
-            this.txtStudentID.Location = new System.Drawing.Point(136, 80);
-            this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(341, 33);
-            this.txtStudentID.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(130, 36);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 36);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "ID:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // txtStudentForm
             // 
-            this.txtStudentForm.Location = new System.Drawing.Point(136, 631);
+            this.txtStudentForm.Location = new System.Drawing.Point(136, 567);
             this.txtStudentForm.Name = "txtStudentForm";
             this.txtStudentForm.Size = new System.Drawing.Size(341, 33);
             this.txtStudentForm.TabIndex = 15;
@@ -327,7 +305,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(130, 584);
+            this.label8.Location = new System.Drawing.Point(130, 520);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(81, 36);
             this.label8.TabIndex = 14;
@@ -335,14 +313,14 @@
             // 
             // txtStudentGender
             // 
-            this.txtStudentGender.Location = new System.Drawing.Point(136, 535);
+            this.txtStudentGender.Location = new System.Drawing.Point(136, 471);
             this.txtStudentGender.Name = "txtStudentGender";
             this.txtStudentGender.Size = new System.Drawing.Size(341, 33);
             this.txtStudentGender.TabIndex = 13;
             // 
             // dateStudentPicker
             // 
-            this.dateStudentPicker.Location = new System.Drawing.Point(136, 437);
+            this.dateStudentPicker.Location = new System.Drawing.Point(136, 373);
             this.dateStudentPicker.Name = "dateStudentPicker";
             this.dateStudentPicker.Size = new System.Drawing.Size(341, 33);
             this.dateStudentPicker.TabIndex = 12;
@@ -353,7 +331,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(328, 704);
+            this.btnCancel.Location = new System.Drawing.Point(328, 671);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(149, 48);
             this.btnCancel.TabIndex = 11;
@@ -366,7 +344,7 @@
             this.btnSaveChanges.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveChanges.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSaveChanges.ForeColor = System.Drawing.Color.White;
-            this.btnSaveChanges.Location = new System.Drawing.Point(136, 704);
+            this.btnSaveChanges.Location = new System.Drawing.Point(136, 671);
             this.btnSaveChanges.Name = "btnSaveChanges";
             this.btnSaveChanges.Size = new System.Drawing.Size(149, 48);
             this.btnSaveChanges.TabIndex = 10;
@@ -377,7 +355,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(130, 488);
+            this.label7.Location = new System.Drawing.Point(130, 424);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 36);
             this.label7.TabIndex = 8;
@@ -387,7 +365,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(130, 389);
+            this.label5.Location = new System.Drawing.Point(130, 325);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 36);
             this.label5.TabIndex = 6;
@@ -395,7 +373,7 @@
             // 
             // txtStudentPatronymic
             // 
-            this.txtStudentPatronymic.Location = new System.Drawing.Point(136, 338);
+            this.txtStudentPatronymic.Location = new System.Drawing.Point(136, 274);
             this.txtStudentPatronymic.Name = "txtStudentPatronymic";
             this.txtStudentPatronymic.Size = new System.Drawing.Size(341, 33);
             this.txtStudentPatronymic.TabIndex = 5;
@@ -404,7 +382,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(130, 294);
+            this.label6.Location = new System.Drawing.Point(130, 230);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 36);
             this.label6.TabIndex = 4;
@@ -412,7 +390,7 @@
             // 
             // txtStudentSurname
             // 
-            this.txtStudentSurname.Location = new System.Drawing.Point(136, 165);
+            this.txtStudentSurname.Location = new System.Drawing.Point(136, 101);
             this.txtStudentSurname.Name = "txtStudentSurname";
             this.txtStudentSurname.Size = new System.Drawing.Size(341, 33);
             this.txtStudentSurname.TabIndex = 3;
@@ -421,7 +399,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(130, 121);
+            this.label4.Location = new System.Drawing.Point(130, 57);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 36);
             this.label4.TabIndex = 2;
@@ -430,7 +408,7 @@
             // 
             // txtStudentName
             // 
-            this.txtStudentName.Location = new System.Drawing.Point(136, 250);
+            this.txtStudentName.Location = new System.Drawing.Point(136, 186);
             this.txtStudentName.Name = "txtStudentName";
             this.txtStudentName.Size = new System.Drawing.Size(341, 33);
             this.txtStudentName.TabIndex = 1;
@@ -439,7 +417,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(130, 206);
+            this.label3.Location = new System.Drawing.Point(130, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 36);
             this.label3.TabIndex = 0;
@@ -493,8 +471,6 @@
         private System.Windows.Forms.TextBox txtStudentGender;
         private System.Windows.Forms.TextBox txtStudentForm;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtStudentID;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnSortBySurname;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnSortByName;

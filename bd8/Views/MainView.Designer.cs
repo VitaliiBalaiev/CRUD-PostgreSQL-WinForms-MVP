@@ -31,11 +31,13 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnTeachers = new System.Windows.Forms.Button();
             this.btnStudents = new System.Windows.Forms.Button();
+            this.btnForms = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnForms);
             this.panel1.Controls.Add(this.btnTeachers);
             this.panel1.Controls.Add(this.btnStudents);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -72,6 +74,20 @@
             this.btnStudents.Text = "Студенти";
             this.btnStudents.UseVisualStyleBackColor = false;
             // 
+            // btnForms
+            // 
+            this.btnForms.BackColor = System.Drawing.Color.DimGray;
+            this.btnForms.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnForms.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnForms.ForeColor = System.Drawing.Color.White;
+            this.btnForms.Location = new System.Drawing.Point(3, 132);
+            this.btnForms.Name = "btnForms";
+            this.btnForms.Size = new System.Drawing.Size(276, 56);
+            this.btnForms.TabIndex = 3;
+            this.btnForms.Text = "Класи";
+            this.btnForms.UseVisualStyleBackColor = false;
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -91,5 +107,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnStudents;
         private System.Windows.Forms.Button btnTeachers;
+        private System.Windows.Forms.Button btnForms;
     }
 }

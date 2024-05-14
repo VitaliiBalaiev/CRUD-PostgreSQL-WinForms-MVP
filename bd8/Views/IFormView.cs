@@ -7,15 +7,11 @@ using System.Windows.Forms;
 
 namespace bd8.Views
 {
-    public interface IStudentView
+    public interface IFormView
     {
-        string Surname { get; set; }
-        string StudentName { get; set; }
-        string Patronymic { get; set; }
-        string DateOfBirth { get; set; }
-
-        string Gender { get; set; }
-        string IdForm { get; set; }
+        string FormName { get; set; }
+        string NumberOfStudents { get; set; }
+        string IdTeacher { get; set; }
 
         string SearchValue { get; set; }
         bool IsEdit { get; set; }
@@ -28,10 +24,9 @@ namespace bd8.Views
         event EventHandler DeleteEvent;
         event EventHandler SaveEvent;
         event EventHandler CancelEvent;
-        event EventHandler SortBySurname;
-        event EventHandler SortByName;
+        event EventHandler SortByStudentsNumber;
         event EventHandler ResetFilters;
-        void SetStudentListBindingSource(BindingSource studentList);
+        void SetFormListBindingSource(BindingSource formList);
         void Show();
     }
 }

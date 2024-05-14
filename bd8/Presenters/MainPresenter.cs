@@ -21,6 +21,7 @@ namespace bd8.Presenters
             this.PostgreSQLConnectionString = sqlConnectionString;
             this.mainView.ShowStudentView += ShowStudentsView;
             this.mainView.ShowTeacherView += ShowTeachersView;
+            this.mainView.ShowFormView += ShowFormsView;
         }
 
         private void ShowStudentsView(object sender, EventArgs e)
@@ -35,6 +36,12 @@ namespace bd8.Presenters
             ITeacherView view = TeacherView.GetInstance((MainView)mainView);
             ITeacherRepository repository = new TeacherRepository(PostgreSQLConnectionString);
             new TeacherPresenter(view, repository);
+        }
+        private void ShowFormsView(object sender, EventArgs e)
+        {
+            IFormView view = FormView.GetInstance((MainView)mainView);
+            IFormRepository repository = new FormRepository(PostgreSQLConnectionString);
+            new FormPresenter(view, repository);
         }
     }
 }

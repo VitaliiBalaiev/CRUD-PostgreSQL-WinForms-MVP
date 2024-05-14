@@ -17,10 +17,11 @@ namespace bd8.Views
             InitializeComponent();
             btnStudents.Click += delegate { ShowStudentView?.Invoke(this, EventArgs.Empty); };
             btnTeachers.Click += delegate { ShowTeacherView?.Invoke(this, EventArgs.Empty); };
+            btnForms.Click += delegate { ShowFormView?.Invoke(this, EventArgs.Empty); };
         }
 
         public event EventHandler ShowStudentView;
         public event EventHandler ShowTeacherView;
-        public event EventHandler ShowDegreeView;
+        public event EventHandler ShowFormView;
     }
 }

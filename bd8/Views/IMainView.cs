@@ -10,6 +10,6 @@ namespace bd8.Views
     {
         event EventHandler ShowStudentView;
         event EventHandler ShowTeacherView;
-        event EventHandler ShowDegreeView;
+        event EventHandler ShowFormView;
     }
 }

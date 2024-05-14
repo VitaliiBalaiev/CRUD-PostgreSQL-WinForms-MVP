@@ -44,3 +44,4 @@ C:\Users\38068\source\repos\bd8\bd8\obj\Debug\bd8.csproj.CopyComplete
 C:\Users\38068\source\repos\bd8\bd8\obj\Debug\bd8.Views.StudentView.resources
 C:\Users\38068\source\repos\bd8\bd8\obj\Debug\bd8.Views.MainView.resources
 C:\Users\38068\source\repos\bd8\bd8\obj\Debug\bd8.Views.TeacherView.resources
+C:\Users\38068\source\repos\bd8\bd8\obj\Debug\bd8.Views.FormView.resources

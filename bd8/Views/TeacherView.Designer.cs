@@ -47,8 +47,6 @@
             this.tabTeacherDetails = new System.Windows.Forms.TabPage();
             this.txtTeacherIDSchool = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtTeacherID = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtTeacherDegree = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtTeacherGender = new System.Windows.Forms.TextBox();
@@ -289,8 +287,6 @@
             // 
             this.tabTeacherDetails.Controls.Add(this.txtTeacherIDSchool);
             this.tabTeacherDetails.Controls.Add(this.label1);
-            this.tabTeacherDetails.Controls.Add(this.txtTeacherID);
-            this.tabTeacherDetails.Controls.Add(this.label9);
             this.tabTeacherDetails.Controls.Add(this.txtTeacherDegree);
             this.tabTeacherDetails.Controls.Add(this.label8);
             this.tabTeacherDetails.Controls.Add(this.txtTeacherGender);
@@ -308,14 +304,14 @@
             this.tabTeacherDetails.Location = new System.Drawing.Point(4, 34);
             this.tabTeacherDetails.Name = "tabTeacherDetails";
             this.tabTeacherDetails.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTeacherDetails.Size = new System.Drawing.Size(1521, 795);
+            this.tabTeacherDetails.Size = new System.Drawing.Size(1633, 817);
             this.tabTeacherDetails.TabIndex = 1;
             this.tabTeacherDetails.Text = "Деталі";
             this.tabTeacherDetails.UseVisualStyleBackColor = true;
             // 
             // txtTeacherIDSchool
             // 
-            this.txtTeacherIDSchool.Location = new System.Drawing.Point(136, 679);
+            this.txtTeacherIDSchool.Location = new System.Drawing.Point(136, 625);
             this.txtTeacherIDSchool.Name = "txtTeacherIDSchool";
             this.txtTeacherIDSchool.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherIDSchool.TabIndex = 19;
@@ -324,33 +320,15 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(135, 640);
+            this.label1.Location = new System.Drawing.Point(135, 586);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 36);
             this.label1.TabIndex = 18;
             this.label1.Text = "ID Школи:";
             // 
-            // txtTeacherID
-            // 
-            this.txtTeacherID.Location = new System.Drawing.Point(136, 51);
-            this.txtTeacherID.Name = "txtTeacherID";
-            this.txtTeacherID.Size = new System.Drawing.Size(341, 33);
-            this.txtTeacherID.TabIndex = 17;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(130, 7);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 36);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "ID:";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // txtTeacherDegree
             // 
-            this.txtTeacherDegree.Location = new System.Drawing.Point(136, 592);
+            this.txtTeacherDegree.Location = new System.Drawing.Point(136, 538);
             this.txtTeacherDegree.Name = "txtTeacherDegree";
             this.txtTeacherDegree.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherDegree.TabIndex = 15;
@@ -359,7 +337,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(130, 545);
+            this.label8.Location = new System.Drawing.Point(130, 491);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 36);
             this.label8.TabIndex = 14;
@@ -367,14 +345,14 @@
             // 
             // txtTeacherGender
             // 
-            this.txtTeacherGender.Location = new System.Drawing.Point(136, 499);
+            this.txtTeacherGender.Location = new System.Drawing.Point(136, 445);
             this.txtTeacherGender.Name = "txtTeacherGender";
             this.txtTeacherGender.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherGender.TabIndex = 13;
             // 
             // dateTeacherPicker
             // 
-            this.dateTeacherPicker.Location = new System.Drawing.Point(136, 408);
+            this.dateTeacherPicker.Location = new System.Drawing.Point(136, 354);
             this.dateTeacherPicker.Name = "dateTeacherPicker";
             this.dateTeacherPicker.Size = new System.Drawing.Size(341, 33);
             this.dateTeacherPicker.TabIndex = 12;
@@ -409,7 +387,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(130, 452);
+            this.label7.Location = new System.Drawing.Point(130, 398);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 36);
             this.label7.TabIndex = 8;
@@ -419,7 +397,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(130, 360);
+            this.label5.Location = new System.Drawing.Point(130, 306);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 36);
             this.label5.TabIndex = 6;
@@ -427,7 +405,7 @@
             // 
             // txtTeacherPatronymic
             // 
-            this.txtTeacherPatronymic.Location = new System.Drawing.Point(136, 309);
+            this.txtTeacherPatronymic.Location = new System.Drawing.Point(136, 255);
             this.txtTeacherPatronymic.Name = "txtTeacherPatronymic";
             this.txtTeacherPatronymic.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherPatronymic.TabIndex = 5;
@@ -436,7 +414,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(130, 265);
+            this.label6.Location = new System.Drawing.Point(130, 211);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 36);
             this.label6.TabIndex = 4;
@@ -444,7 +422,7 @@
             // 
             // txtTeacherSurname
             // 
-            this.txtTeacherSurname.Location = new System.Drawing.Point(136, 136);
+            this.txtTeacherSurname.Location = new System.Drawing.Point(136, 82);
             this.txtTeacherSurname.Name = "txtTeacherSurname";
             this.txtTeacherSurname.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherSurname.TabIndex = 3;
@@ -453,7 +431,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(130, 92);
+            this.label4.Location = new System.Drawing.Point(130, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 36);
             this.label4.TabIndex = 2;
@@ -462,7 +440,7 @@
             // 
             // txtTeacherName
             // 
-            this.txtTeacherName.Location = new System.Drawing.Point(136, 221);
+            this.txtTeacherName.Location = new System.Drawing.Point(136, 167);
             this.txtTeacherName.Name = "txtTeacherName";
             this.txtTeacherName.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherName.TabIndex = 1;
@@ -471,7 +449,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(130, 177);
+            this.label3.Location = new System.Drawing.Point(130, 123);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 36);
             this.label3.TabIndex = 0;
@@ -511,8 +489,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtTeacherSearch;
         private System.Windows.Forms.TabPage tabTeacherDetails;
-        private System.Windows.Forms.TextBox txtTeacherID;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtTeacherDegree;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtTeacherGender;
