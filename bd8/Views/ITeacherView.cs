@@ -11,7 +11,7 @@ namespace bd8.Views
     {
         string IdTeacher { get; set; }
         string Surname { get; set; }
-        string Name { get; set; }
+        string TeacherName { get; set; }
         string Patronymic { get; set; }
         string DateOfBirth { get; set; }
 

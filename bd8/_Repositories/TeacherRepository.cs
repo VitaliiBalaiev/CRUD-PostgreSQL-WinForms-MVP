@@ -88,22 +88,31 @@ namespace bd8._Repositories
                 command.Connection = connection;
 
                 // SQL Query
-                command.CommandText = @"SELECT * FROM teacher ORDER BY id_teacher ASC;";
+                //command.CommandText = @"SELECT * FROM teacher ORDER BY id_teacher ASC;";
+                command.CommandText = @"SELECT t.id_teacher, t.surname, t.name, t.patronymic, t.date_of_birth, t.gender, t.id_degree, d.description, t.id_school, s.name
+                                        FROM teacher t
+                                        JOIN degree d ON t.id_degree = d.id_degree
+                                        JOIN school s ON t.id_school = s.id_school
+                                        ORDER BY id_teacher ASC;";
 
                 // Reading from DB
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        var teacherModel = new TeacherModel();
-                        teacherModel.IdTeacher = (int)reader[0];
-                        teacherModel.Surname = reader[1].ToString();
-                        teacherModel.Name = reader[2].ToString();
-                        teacherModel.Patronymic = reader[3].ToString();
-                        teacherModel.DateOfBirth = (DateTime)reader[4];
-                        teacherModel.Gender = reader[5].ToString();
-                        teacherModel.IdDegree = (int)reader[6];
-                        teacherModel.IdSchool = (int)reader[7];
+                        var teacherModel = new TeacherModel
+                        {
+                            IdTeacher = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdDegree = (int)reader[6],
+                            DegreeDescription = reader[7].ToString(),
+                            IdSchool = (int)reader[8],
+                            SchoolName = reader[9].ToString()
+                        };
                         teacherList.Add(teacherModel);
                     }
                 }
@@ -128,9 +137,12 @@ namespace bd8._Repositories
                 command.Connection = connection;
 
                 // SQL Query
-                command.CommandText = @"SELECT * FROM teacher 
-                        WHERE id_teacher = @id OR name iLIKE @name || '%' OR surname iLIKE @surname || '%' OR patronymic iLIKE @patronymic || '%'
-                        ORDER BY name, id_teacher ASC;";
+                command.CommandText = @"SELECT t.id_teacher, t.surname, t.name, t.patronymic, t.date_of_birth, t.gender, t.id_degree, d.description, t.id_school, s.name
+                                        FROM teacher t
+                                        JOIN degree d ON t.id_degree = d.id_degree
+                                        JOIN school s ON t.id_school = s.id_school
+                                        WHERE t.id_teacher = @id OR t.name iLIKE @name || '%' OR t.surname iLIKE @surname || '%' OR t.patronymic iLIKE @patronymic || '%'
+                                        ORDER BY t.name, t.id_teacher ASC;";
 
                 command.Parameters.Add("@id", NpgsqlTypes.NpgsqlDbType.Integer).Value = teacherId;
                 command.Parameters.Add("@name", NpgsqlTypes.NpgsqlDbType.Varchar).Value = teacherName;
@@ -143,15 +155,19 @@ namespace bd8._Repositories
                 {
                     while (reader.Read())
                     {
-                        var teacherModel = new TeacherModel();
-                        teacherModel.IdTeacher = (int)reader[0];
-                        teacherModel.Surname = reader[1].ToString();
-                        teacherModel.Name = reader[2].ToString();
-                        teacherModel.Patronymic = reader[3].ToString();
-                        teacherModel.DateOfBirth = (DateTime)reader[4];
-                        teacherModel.Gender = reader[5].ToString();
-                        teacherModel.IdDegree = (int)reader[6];
-                        teacherModel.IdSchool = (int)reader[7];
+                        var teacherModel = new TeacherModel
+                        {
+                            IdTeacher = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdDegree = (int)reader[6],
+                            DegreeDescription = reader[7].ToString(),
+                            IdSchool = (int)reader[8],
+                            SchoolName = reader[9].ToString()
+                        };
                         teacherList.Add(teacherModel);
                     }
                 }
@@ -170,22 +186,30 @@ namespace bd8._Repositories
                 command.Connection = connection;
 
                 // SQL Query
-                command.CommandText = @"SELECT * FROM teacher ORDER BY surname ASC;";
+                command.CommandText = @"SELECT t.id_teacher, t.surname, t.name, t.patronymic, t.date_of_birth, t.gender, t.id_degree, d.description, t.id_school, s.name
+                                        FROM teacher t
+                                        JOIN degree d ON t.id_degree = d.id_degree
+                                        JOIN school s ON t.id_school = s.id_school
+                                        ORDER BY t.surname ASC;";
 
                 // Reading from DB
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        var teacherModel = new TeacherModel();
-                        teacherModel.IdTeacher = (int)reader[0];
-                        teacherModel.Surname = reader[1].ToString();
-                        teacherModel.Name = reader[2].ToString();
-                        teacherModel.Patronymic = reader[3].ToString();
-                        teacherModel.DateOfBirth = (DateTime)reader[4];
-                        teacherModel.Gender = reader[5].ToString();
-                        teacherModel.IdDegree = (int)reader[6];
-                        teacherModel.IdSchool = (int)reader[7];
+                        var teacherModel = new TeacherModel
+                        {
+                            IdTeacher = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdDegree = (int)reader[6],
+                            DegreeDescription = reader[7].ToString(),
+                            IdSchool = (int)reader[8],
+                            SchoolName = reader[9].ToString()
+                        };
                         teacherList.Add(teacherModel);
                     }
                 }
@@ -205,22 +229,30 @@ namespace bd8._Repositories
                 command.Connection = connection;
 
                 // SQL Query
-                command.CommandText = @"SELECT * FROM teacher ORDER BY name ASC;";
+                command.CommandText = @"SELECT t.id_teacher, t.surname, t.name, t.patronymic, t.date_of_birth, t.gender, t.id_degree, d.description, t.id_school, s.name
+                                        FROM teacher t
+                                        JOIN degree d ON t.id_degree = d.id_degree
+                                        JOIN school s ON t.id_school = s.id_school
+                                        ORDER BY t.name ASC;";
 
                 // Reading from DB
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
-                        var teacherModel = new TeacherModel();
-                        teacherModel.IdTeacher = (int)reader[0];
-                        teacherModel.Surname = reader[1].ToString();
-                        teacherModel.Name = reader[2].ToString();
-                        teacherModel.Patronymic = reader[3].ToString();
-                        teacherModel.DateOfBirth = (DateTime)reader[4];
-                        teacherModel.Gender = reader[5].ToString();
-                        teacherModel.IdDegree = (int)reader[6];
-                        teacherModel.IdSchool = (int)reader[7];
+                        var teacherModel = new TeacherModel
+                        {
+                            IdTeacher = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdDegree = (int)reader[6],
+                            DegreeDescription = reader[7].ToString(),
+                            IdSchool = (int)reader[8],
+                            SchoolName = reader[9].ToString()
+                        };
                         teacherList.Add(teacherModel);
                     }
                 }

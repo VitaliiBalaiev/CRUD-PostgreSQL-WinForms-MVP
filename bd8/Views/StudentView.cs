@@ -16,7 +16,6 @@ namespace bd8.Views
         private bool isSuccessful;
         private bool isEdit;
 
-        // Конструктор
         public StudentView()
         {
             InitializeComponent();
@@ -26,14 +25,14 @@ namespace bd8.Views
 
         private void RaiseViewEvent()
         {
-            // Search
+            // Search button
             btnSearch.Click += delegate { SearchEvent?.Invoke(this, EventArgs.Empty); };
             txtStudentSearch.KeyDown += (s, e) =>
             {
                 if (e.KeyCode == Keys.Enter)
                     SearchEvent?.Invoke(this, EventArgs.Empty);
             };
-            // Додати
+            // Add button
             btnAddNew.Click += delegate 
             { 
                 AddNewEvent?.Invoke(this, EventArgs.Empty);
@@ -41,7 +40,7 @@ namespace bd8.Views
                 tabControl1.TabPages.Add(tabStudentDetails);
                 tabStudentDetails.Text = "Додати нового студента";
             };
-            // Редагувати
+            // Edit button
             btnEdit.Click += delegate 
             { 
                 EditEvent?.Invoke(this, EventArgs.Empty);
@@ -50,7 +49,7 @@ namespace bd8.Views
                 tabStudentDetails.Text = "Редагувати дані";
 
             };
-            // Видалити
+            // Delete button
             btnDelete.Click += delegate
             { 
                 var result = MessageBox.Show("Ви дійсно хочете видалити цей запис?", "Увага!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
@@ -60,7 +59,7 @@ namespace bd8.Views
                     MessageBox.Show(Message);
                 }
             };
-            // Зберегти зміни
+            // Save button
             btnSaveChanges.Click += delegate 
             {
                SaveEvent?.Invoke(this, EventArgs.Empty);
@@ -71,31 +70,30 @@ namespace bd8.Views
                 }
                 MessageBox.Show(Message);
             };
-            // Відміна
+            // Cancel button
             btnCancel.Click += delegate 
             { 
                 CancelEvent?.Invoke(this, EventArgs.Empty);
                 tabControl1.TabPages.Remove(tabStudentDetails);
                 tabControl1.TabPages.Add(tabStudentList);
             };
-            // Сортування за прізвищем (А-Я)
+            // Sort by surname (A-Z)
             btnSortBySurname.Click += delegate
             {
                 SortBySurname?.Invoke(this, EventArgs.Empty);
             };
-            // Сортування за іменем (А-Я)
+            // Sort by name (A-Z)
             btnSortByName.Click += delegate
             {
                 SortByName?.Invoke(this, EventArgs.Empty);
             };
-            // Скинути фільтри
+            // Reset filters button
             btnResetFilters.Click += delegate
             {
                 ResetFilters?.Invoke(this, EventArgs.Empty);
             };
         }
 
-        // Поля
         public string IdStudent
         {
             get { return txtStudentID.Text; }
@@ -106,7 +104,7 @@ namespace bd8.Views
             get { return txtStudentSurname.Text; }
             set { txtStudentSurname.Text = value; }
         }
-        public string Name
+        public string StudentName
         {
             get { return txtStudentName.Text; }
             set { txtStudentName.Text = value; }
@@ -152,7 +150,6 @@ namespace bd8.Views
             set { message = value; } 
         }
 
-        // Події
         public event EventHandler SearchEvent;
         public event EventHandler AddNewEvent;
         public event EventHandler EditEvent;
@@ -163,7 +160,6 @@ namespace bd8.Views
         public event EventHandler SortByName;
         public event EventHandler ResetFilters;
 
-        // Методи
         public void SetStudentListBindingSource(BindingSource studentList)
         {
             dataGridView1.DataSource = studentList;

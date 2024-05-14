@@ -73,7 +73,7 @@ namespace bd8.Presenters
             var teacher = (TeacherModel)teachersBindingSource.Current;
             view.IdTeacher = teacher.IdTeacher.ToString();
             view.Surname = teacher.Surname;
-            view.Name = teacher.Name;
+            view.TeacherName = teacher.Name;
             view.Patronymic = teacher.Patronymic;
             view.DateOfBirth = teacher.DateOfBirth.ToString();
             view.Gender = teacher.Gender;
@@ -88,7 +88,7 @@ namespace bd8.Presenters
             {
                 IdTeacher = Convert.ToInt32(view.IdTeacher),
                 Surname = view.Surname,
-                Name = view.Name,
+                Name = view.TeacherName,
                 Patronymic = view.Patronymic,
                 DateOfBirth = Convert.ToDateTime(view.DateOfBirth),
                 Gender = view.Gender,
@@ -115,7 +115,7 @@ namespace bd8.Presenters
         {
             view.IdTeacher = "";
             view.Surname = "";
-            view.Name = "";
+            view.TeacherName = "";
             view.Patronymic = "";
             view.DateOfBirth = "";
             view.Gender = "";

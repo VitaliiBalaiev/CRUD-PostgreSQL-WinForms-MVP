@@ -16,7 +16,9 @@ namespace bd8.Models
         private DateTime date_of_birth;
         private string gender;
         private int id_degree;
+        private string description;
         private int id_school;
+        private string schoolName;
 
         [DisplayName("ID")]
         public int IdTeacher { get => id_teacher; set => id_teacher = value; }
@@ -39,10 +41,18 @@ namespace bd8.Models
         [DisplayName("Gender")]
         public string Gender { get => gender; set => gender = value; }
 
+        [System.ComponentModel.Browsable(false)]
         [DisplayName("Degree ID")]
         public int IdDegree { get => id_degree; set => id_degree = value; }
+        
+        [DisplayName("Degree")]
+        public string DegreeDescription { get => description; set => description = value; }
 
+        [System.ComponentModel.Browsable(false)]
         [DisplayName("School ID")]
         public int IdSchool { get => id_school; set => id_school = value; }
+
+        [DisplayName("School Name")]
+        public string SchoolName { get => schoolName; set => schoolName = value; }
     }
 }

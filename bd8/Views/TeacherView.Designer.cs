@@ -78,7 +78,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1529, 833);
+            this.tabControl1.Size = new System.Drawing.Size(1641, 855);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -86,7 +86,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1521, 800);
+            this.tabPage1.Size = new System.Drawing.Size(1633, 822);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -110,11 +110,12 @@
             this.tabControl2.Location = new System.Drawing.Point(0, 0);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1529, 833);
+            this.tabControl2.Size = new System.Drawing.Size(1641, 855);
             this.tabControl2.TabIndex = 3;
             // 
             // tabTeacherList
             // 
+            this.tabTeacherList.BackColor = System.Drawing.Color.White;
             this.tabTeacherList.Controls.Add(this.btnResetFilters);
             this.tabTeacherList.Controls.Add(this.btnSortByNameTeacher);
             this.tabTeacherList.Controls.Add(this.label10);
@@ -131,10 +132,9 @@
             this.tabTeacherList.Location = new System.Drawing.Point(4, 34);
             this.tabTeacherList.Name = "tabTeacherList";
             this.tabTeacherList.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTeacherList.Size = new System.Drawing.Size(1521, 795);
+            this.tabTeacherList.Size = new System.Drawing.Size(1633, 817);
             this.tabTeacherList.TabIndex = 0;
             this.tabTeacherList.Text = "Список вчителів";
-            this.tabTeacherList.UseVisualStyleBackColor = true;
             // 
             // btnResetFilters
             // 
@@ -144,7 +144,7 @@
             this.btnResetFilters.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnResetFilters.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnResetFilters.ForeColor = System.Drawing.Color.White;
-            this.btnResetFilters.Location = new System.Drawing.Point(1292, 667);
+            this.btnResetFilters.Location = new System.Drawing.Point(1404, 667);
             this.btnResetFilters.Name = "btnResetFilters";
             this.btnResetFilters.Size = new System.Drawing.Size(210, 49);
             this.btnResetFilters.TabIndex = 14;
@@ -159,7 +159,7 @@
             this.btnSortByNameTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSortByNameTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSortByNameTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnSortByNameTeacher.Location = new System.Drawing.Point(1292, 547);
+            this.btnSortByNameTeacher.Location = new System.Drawing.Point(1404, 547);
             this.btnSortByNameTeacher.Name = "btnSortByNameTeacher";
             this.btnSortByNameTeacher.Size = new System.Drawing.Size(210, 49);
             this.btnSortByNameTeacher.TabIndex = 11;
@@ -168,9 +168,10 @@
             // 
             // label10
             // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Source Sans Pro", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1340, 436);
+            this.label10.Location = new System.Drawing.Point(1439, 436);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(144, 31);
             this.label10.TabIndex = 10;
@@ -184,7 +185,7 @@
             this.btnSortBySurnameTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSortBySurnameTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSortBySurnameTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnSortBySurnameTeacher.Location = new System.Drawing.Point(1292, 479);
+            this.btnSortBySurnameTeacher.Location = new System.Drawing.Point(1404, 479);
             this.btnSortBySurnameTeacher.Name = "btnSortBySurnameTeacher";
             this.btnSortBySurnameTeacher.Size = new System.Drawing.Size(210, 49);
             this.btnSortBySurnameTeacher.TabIndex = 9;
@@ -199,7 +200,7 @@
             this.btnDeleteTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDeleteTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDeleteTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteTeacher.Location = new System.Drawing.Point(1292, 309);
+            this.btnDeleteTeacher.Location = new System.Drawing.Point(1404, 309);
             this.btnDeleteTeacher.Name = "btnDeleteTeacher";
             this.btnDeleteTeacher.Size = new System.Drawing.Size(210, 49);
             this.btnDeleteTeacher.TabIndex = 6;
@@ -214,7 +215,7 @@
             this.btnEditTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnEditTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnEditTeacher.Location = new System.Drawing.Point(1292, 229);
+            this.btnEditTeacher.Location = new System.Drawing.Point(1404, 226);
             this.btnEditTeacher.Name = "btnEditTeacher";
             this.btnEditTeacher.Size = new System.Drawing.Size(210, 49);
             this.btnEditTeacher.TabIndex = 5;
@@ -229,7 +230,7 @@
             this.btnAddNewTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNewTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnAddNewTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnAddNewTeacher.Location = new System.Drawing.Point(1292, 145);
+            this.btnAddNewTeacher.Location = new System.Drawing.Point(1404, 145);
             this.btnAddNewTeacher.Name = "btnAddNewTeacher";
             this.btnAddNewTeacher.Size = new System.Drawing.Size(210, 49);
             this.btnAddNewTeacher.TabIndex = 4;
@@ -247,7 +248,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(1230, 571);
+            this.dataGridView2.Size = new System.Drawing.Size(1342, 593);
             this.dataGridView2.TabIndex = 3;
             // 
             // btnTeacherSearch
@@ -258,7 +259,7 @@
             this.btnTeacherSearch.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTeacherSearch.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnTeacherSearch.ForeColor = System.Drawing.Color.White;
-            this.btnTeacherSearch.Location = new System.Drawing.Point(1112, 82);
+            this.btnTeacherSearch.Location = new System.Drawing.Point(1224, 82);
             this.btnTeacherSearch.Name = "btnTeacherSearch";
             this.btnTeacherSearch.Size = new System.Drawing.Size(153, 36);
             this.btnTeacherSearch.TabIndex = 2;
@@ -281,7 +282,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTeacherSearch.Location = new System.Drawing.Point(35, 83);
             this.txtTeacherSearch.Name = "txtTeacherSearch";
-            this.txtTeacherSearch.Size = new System.Drawing.Size(1031, 33);
+            this.txtTeacherSearch.Size = new System.Drawing.Size(1143, 33);
             this.txtTeacherSearch.TabIndex = 0;
             // 
             // tabTeacherDetails
@@ -480,7 +481,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1529, 833);
+            this.ClientSize = new System.Drawing.Size(1641, 855);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.tabControl1);
             this.Name = "TeacherView";

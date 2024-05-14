@@ -93,14 +93,16 @@ namespace bd8._Repositories
                 {
                     while (reader.Read())
                     {
-                        var studentModel = new StudentModel();
-                        studentModel.IdStudent = (int)reader[0];
-                        studentModel.Surname = reader[1].ToString();
-                        studentModel.Name = reader[2].ToString();
-                        studentModel.Patronymic = reader[3].ToString();
-                        studentModel.DateOfBirth = (DateTime)reader[4];
-                        studentModel.Gender = reader[5].ToString();
-                        studentModel.IdForm = (int) reader[6];
+                        var studentModel = new StudentModel
+                        {
+                            IdStudent = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdForm = (int)reader[6]
+                        };
                         studentList.Add(studentModel);
                     }
                 }
@@ -140,14 +142,16 @@ namespace bd8._Repositories
                 {
                     while (reader.Read())
                     {
-                        var studentModel = new StudentModel();
-                        studentModel.IdStudent = (int)reader[0];
-                        studentModel.Surname = reader[1].ToString();
-                        studentModel.Name = reader[2].ToString();
-                        studentModel.Patronymic = reader[3].ToString();
-                        studentModel.DateOfBirth = (DateTime)reader[4];
-                        studentModel.Gender = reader[5].ToString();
-                        studentModel.IdForm = (int)reader[6];
+                        var studentModel = new StudentModel
+                        {
+                            IdStudent = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdForm = (int)reader[6]
+                        };
                         studentList.Add(studentModel);
                     }
                 }
@@ -174,14 +178,16 @@ namespace bd8._Repositories
                 {
                     while (reader.Read())
                     {
-                        var studentModel = new StudentModel();
-                        studentModel.IdStudent = (int)reader[0];
-                        studentModel.Surname = reader[1].ToString();
-                        studentModel.Name = reader[2].ToString();
-                        studentModel.Patronymic = reader[3].ToString();
-                        studentModel.DateOfBirth = (DateTime)reader[4];
-                        studentModel.Gender = reader[5].ToString();
-                        studentModel.IdForm = (int)reader[6];
+                        var studentModel = new StudentModel
+                        {
+                            IdStudent = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdForm = (int)reader[6]
+                        };
                         studentList.Add(studentModel);
                     }
                 }
@@ -208,14 +214,16 @@ namespace bd8._Repositories
                 {
                     while (reader.Read())
                     {
-                        var studentModel = new StudentModel();
-                        studentModel.IdStudent = (int)reader[0];
-                        studentModel.Surname = reader[1].ToString();
-                        studentModel.Name = reader[2].ToString();
-                        studentModel.Patronymic = reader[3].ToString();
-                        studentModel.DateOfBirth = (DateTime)reader[4];
-                        studentModel.Gender = reader[5].ToString();
-                        studentModel.IdForm = (int)reader[6];
+                        var studentModel = new StudentModel
+                        {
+                            IdStudent = (int)reader[0],
+                            Surname = reader[1].ToString(),
+                            Name = reader[2].ToString(),
+                            Patronymic = reader[3].ToString(),
+                            DateOfBirth = (DateTime)reader[4],
+                            Gender = reader[5].ToString(),
+                            IdForm = (int)reader[6]
+                        };
                         studentList.Add(studentModel);
                     }
                 }

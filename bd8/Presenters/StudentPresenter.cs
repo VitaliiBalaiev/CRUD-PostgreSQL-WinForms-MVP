@@ -76,7 +76,7 @@ namespace bd8.Presenters
             var student = (StudentModel)studentsBindingSource.Current;
             view.IdStudent = student.IdStudent.ToString();
             view.Surname = student.Surname;
-            view.Name = student.Name;
+            view.StudentName = student.Name;
             view.Patronymic = student.Patronymic;
             view.DateOfBirth = student.DateOfBirth.ToString();
             view.Gender = student.Gender;
@@ -90,7 +90,7 @@ namespace bd8.Presenters
             {
                 IdStudent = Convert.ToInt32(view.IdStudent),
                 Surname = view.Surname,
-                Name = view.Name,
+                Name = view.StudentName,
                 Patronymic = view.Patronymic,
                 DateOfBirth = Convert.ToDateTime(view.DateOfBirth),
                 Gender = view.Gender,
@@ -116,7 +116,7 @@ namespace bd8.Presenters
         {
             view.IdStudent = "";
             view.Surname = "";
-            view.Name = "";
+            view.StudentName = "";
             view.Patronymic = "";
             view.DateOfBirth = "";
             view.Gender = "";
