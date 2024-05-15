@@ -46,7 +46,6 @@
             this.tabStudentDetails = new System.Windows.Forms.TabPage();
             this.txtStudentForm = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtStudentGender = new System.Windows.Forms.TextBox();
             this.dateStudentPicker = new System.Windows.Forms.DateTimePicker();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSaveChanges = new System.Windows.Forms.Button();
@@ -60,6 +59,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtIdStudent = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.genderComboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabStudentList.SuspendLayout();
@@ -274,11 +274,11 @@
             // 
             // tabStudentDetails
             // 
+            this.tabStudentDetails.Controls.Add(this.genderComboBox);
             this.tabStudentDetails.Controls.Add(this.txtIdStudent);
             this.tabStudentDetails.Controls.Add(this.label9);
             this.tabStudentDetails.Controls.Add(this.txtStudentForm);
             this.tabStudentDetails.Controls.Add(this.label8);
-            this.tabStudentDetails.Controls.Add(this.txtStudentGender);
             this.tabStudentDetails.Controls.Add(this.dateStudentPicker);
             this.tabStudentDetails.Controls.Add(this.btnCancel);
             this.tabStudentDetails.Controls.Add(this.btnSaveChanges);
@@ -314,13 +314,6 @@
             this.label8.Size = new System.Drawing.Size(81, 36);
             this.label8.TabIndex = 14;
             this.label8.Text = "Клас:";
-            // 
-            // txtStudentGender
-            // 
-            this.txtStudentGender.Location = new System.Drawing.Point(136, 471);
-            this.txtStudentGender.Name = "txtStudentGender";
-            this.txtStudentGender.Size = new System.Drawing.Size(341, 33);
-            this.txtStudentGender.TabIndex = 13;
             // 
             // dateStudentPicker
             // 
@@ -447,6 +440,18 @@
             this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label9.Visible = false;
             // 
+            // genderComboBox
+            // 
+            this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.genderComboBox.FormattingEnabled = true;
+            this.genderComboBox.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.genderComboBox.Location = new System.Drawing.Point(136, 475);
+            this.genderComboBox.Name = "genderComboBox";
+            this.genderComboBox.Size = new System.Drawing.Size(341, 33);
+            this.genderComboBox.TabIndex = 21;
+            // 
             // StudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -492,7 +497,6 @@
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dateStudentPicker;
-        private System.Windows.Forms.TextBox txtStudentGender;
         private System.Windows.Forms.TextBox txtStudentForm;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnSortBySurname;
@@ -501,5 +505,6 @@
         private System.Windows.Forms.Button btnResetFilters;
         private System.Windows.Forms.TextBox txtIdStudent;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox genderComboBox;
     }
 }

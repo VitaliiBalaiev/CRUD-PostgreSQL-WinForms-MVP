@@ -122,8 +122,8 @@ namespace bd8.Views
         }
         public string Gender
         {
-            get { return txtStudentGender.Text; }
-            set { txtStudentGender.Text = value; }
+            get { return genderComboBox.Text; }
+            set { genderComboBox.Text = value; }
         }
 
         public string IdForm
