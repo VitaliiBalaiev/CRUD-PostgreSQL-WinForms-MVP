@@ -116,8 +116,8 @@ namespace bd8.Views
         }
         public string Gender
         {
-            get { return txtTeacherGender.Text; }
-            set { txtTeacherGender.Text = value; }
+            get { return genderComboBox.Text; }
+            set { genderComboBox.Text = value; }
         }
 
         public string IdDegree
@@ -127,8 +127,8 @@ namespace bd8.Views
         }
         public string IdSchool
         {
-            get { return txtTeacherIDSchool.Text; }
-            set { txtTeacherIDSchool.Text = value; }
+            get { return schoolComboBox.Text; }
+            set { schoolComboBox.Text = value; }
         }
         public string SearchValue
         {

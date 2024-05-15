@@ -112,7 +112,6 @@ namespace bd8._Repositories
             int IdForm = int.TryParse(value, out _) ? Convert.ToInt32(value) : 0;
             string FormName = value;
             int NumberOfStudents = int.TryParse(value, out _) ? Convert.ToInt32(value) : 0;
-            int IdTeacher = int.TryParse(value, out _) ? Convert.ToInt32(value) : 0;
             string TeacherSurname = value;
 
             // Open connection

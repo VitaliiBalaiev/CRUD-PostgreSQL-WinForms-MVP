@@ -45,11 +45,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTeacherSearch = new System.Windows.Forms.TextBox();
             this.tabTeacherDetails = new System.Windows.Forms.TabPage();
-            this.txtTeacherIDSchool = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTeacherDegree = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtTeacherGender = new System.Windows.Forms.TextBox();
             this.dateTeacherPicker = new System.Windows.Forms.DateTimePicker();
             this.btnCancelTeacher = new System.Windows.Forms.Button();
             this.btnSaveChangesTeacher = new System.Windows.Forms.Button();
@@ -61,6 +59,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTeacherName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.genderComboBox = new System.Windows.Forms.ComboBox();
+            this.schoolComboBox = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabTeacherList.SuspendLayout();
@@ -94,7 +94,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1521, 800);
+            this.tabPage2.Size = new System.Drawing.Size(1633, 822);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -285,11 +285,11 @@
             // 
             // tabTeacherDetails
             // 
-            this.tabTeacherDetails.Controls.Add(this.txtTeacherIDSchool);
+            this.tabTeacherDetails.Controls.Add(this.schoolComboBox);
+            this.tabTeacherDetails.Controls.Add(this.genderComboBox);
             this.tabTeacherDetails.Controls.Add(this.label1);
             this.tabTeacherDetails.Controls.Add(this.txtTeacherDegree);
             this.tabTeacherDetails.Controls.Add(this.label8);
-            this.tabTeacherDetails.Controls.Add(this.txtTeacherGender);
             this.tabTeacherDetails.Controls.Add(this.dateTeacherPicker);
             this.tabTeacherDetails.Controls.Add(this.btnCancelTeacher);
             this.tabTeacherDetails.Controls.Add(this.btnSaveChangesTeacher);
@@ -308,13 +308,6 @@
             this.tabTeacherDetails.TabIndex = 1;
             this.tabTeacherDetails.Text = "Деталі";
             this.tabTeacherDetails.UseVisualStyleBackColor = true;
-            // 
-            // txtTeacherIDSchool
-            // 
-            this.txtTeacherIDSchool.Location = new System.Drawing.Point(136, 625);
-            this.txtTeacherIDSchool.Name = "txtTeacherIDSchool";
-            this.txtTeacherIDSchool.Size = new System.Drawing.Size(341, 33);
-            this.txtTeacherIDSchool.TabIndex = 19;
             // 
             // label1
             // 
@@ -342,13 +335,6 @@
             this.label8.Size = new System.Drawing.Size(115, 36);
             this.label8.TabIndex = 14;
             this.label8.Text = "Ступінь:";
-            // 
-            // txtTeacherGender
-            // 
-            this.txtTeacherGender.Location = new System.Drawing.Point(136, 445);
-            this.txtTeacherGender.Name = "txtTeacherGender";
-            this.txtTeacherGender.Size = new System.Drawing.Size(341, 33);
-            this.txtTeacherGender.TabIndex = 13;
             // 
             // dateTeacherPicker
             // 
@@ -455,6 +441,33 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ім\'я:";
             // 
+            // genderComboBox
+            // 
+            this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.genderComboBox.FormattingEnabled = true;
+            this.genderComboBox.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.genderComboBox.Location = new System.Drawing.Point(136, 448);
+            this.genderComboBox.Name = "genderComboBox";
+            this.genderComboBox.Size = new System.Drawing.Size(341, 33);
+            this.genderComboBox.TabIndex = 20;
+            // 
+            // schoolComboBox
+            // 
+            this.schoolComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.schoolComboBox.FormattingEnabled = true;
+            this.schoolComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.schoolComboBox.Location = new System.Drawing.Point(136, 633);
+            this.schoolComboBox.Name = "schoolComboBox";
+            this.schoolComboBox.Size = new System.Drawing.Size(341, 33);
+            this.schoolComboBox.TabIndex = 21;
+            // 
             // TeacherView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -491,7 +504,6 @@
         private System.Windows.Forms.TabPage tabTeacherDetails;
         private System.Windows.Forms.TextBox txtTeacherDegree;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtTeacherGender;
         private System.Windows.Forms.DateTimePicker dateTeacherPicker;
         private System.Windows.Forms.Button btnCancelTeacher;
         private System.Windows.Forms.Button btnSaveChangesTeacher;
@@ -503,11 +515,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtTeacherName;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtTeacherIDSchool;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnSortBySurnameTeacher;
         private System.Windows.Forms.Button btnSortByNameTeacher;
         private System.Windows.Forms.Button btnResetFilters;
+        private System.Windows.Forms.ComboBox genderComboBox;
+        private System.Windows.Forms.ComboBox schoolComboBox;
     }
 }
