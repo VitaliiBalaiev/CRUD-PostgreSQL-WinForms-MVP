@@ -69,6 +69,7 @@ namespace bd8.Presenters
         private void LoadSelectedTeacherToEdit(object sender, EventArgs e)
         {
             var teacher = (TeacherModel)teachersBindingSource.Current;
+            view.IdTeacher = teacher.IdTeacher.ToString();
             view.Surname = teacher.Surname;
             view.TeacherName = teacher.Name;
             view.Patronymic = teacher.Patronymic;
@@ -83,6 +84,7 @@ namespace bd8.Presenters
         {
             var model = new TeacherModel
             {
+                IdTeacher = Convert.ToInt32(view.IdTeacher),
                 Surname = view.Surname,
                 Name = view.TeacherName,
                 Patronymic = view.Patronymic,
@@ -109,6 +111,7 @@ namespace bd8.Presenters
 
         private void CleanViewFields()
         {
+            view.IdTeacher = "";
             view.Surname = "";
             view.TeacherName = "";
             view.Patronymic = "";

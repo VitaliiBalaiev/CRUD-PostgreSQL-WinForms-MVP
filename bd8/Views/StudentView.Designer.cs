@@ -58,6 +58,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtStudentName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtIdStudent = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabStudentList.SuspendLayout();
@@ -272,6 +274,8 @@
             // 
             // tabStudentDetails
             // 
+            this.tabStudentDetails.Controls.Add(this.txtIdStudent);
+            this.tabStudentDetails.Controls.Add(this.label9);
             this.tabStudentDetails.Controls.Add(this.txtStudentForm);
             this.tabStudentDetails.Controls.Add(this.label8);
             this.tabStudentDetails.Controls.Add(this.txtStudentGender);
@@ -423,6 +427,26 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Ім\'я:";
             // 
+            // txtIdStudent
+            // 
+            this.txtIdStudent.Location = new System.Drawing.Point(632, 93);
+            this.txtIdStudent.Name = "txtIdStudent";
+            this.txtIdStudent.Size = new System.Drawing.Size(341, 33);
+            this.txtIdStudent.TabIndex = 17;
+            this.txtIdStudent.Visible = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(626, 49);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(164, 36);
+            this.label9.TabIndex = 16;
+            this.label9.Text = "ID Студента:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Visible = false;
+            // 
             // StudentView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -475,5 +499,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button btnSortByName;
         private System.Windows.Forms.Button btnResetFilters;
+        private System.Windows.Forms.TextBox txtIdStudent;
+        private System.Windows.Forms.Label label9;
     }
 }

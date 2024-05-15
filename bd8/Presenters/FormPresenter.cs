@@ -70,6 +70,7 @@ namespace bd8.Presenters
         private void LoadSelectedFormToEdit(object sender, EventArgs e)
         {
             var form = (FormModel) formsBindingSource.Current;
+            view.IdForm = form.IdForm.ToString();
             view.FormName = form.FormName;
             view.NumberOfStudents = form.NumberOfStudents.ToString();
             view.IdTeacher = form.IdTeacher.ToString();
@@ -80,6 +81,7 @@ namespace bd8.Presenters
         {
             var model = new FormModel
             {
+                IdForm = Convert.ToInt32(view.IdForm),
                 FormName = view.FormName,
                 NumberOfStudents = Convert.ToInt32(view.NumberOfStudents),
                 IdTeacher = Convert.ToInt32(view.IdTeacher)
@@ -102,6 +104,7 @@ namespace bd8.Presenters
 
         private void CleanViewFields()
         {
+            view.IdForm = "";
             view.FormName = "";
             view.NumberOfStudents = "";
             view.IdTeacher = "";

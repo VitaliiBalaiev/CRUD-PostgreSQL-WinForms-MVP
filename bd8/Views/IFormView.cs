@@ -9,6 +9,7 @@ namespace bd8.Views
 {
     public interface IFormView
     {
+        string IdForm { get; set; }
         string FormName { get; set; }
         string NumberOfStudents { get; set; }
         string IdTeacher { get; set; }

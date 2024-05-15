@@ -90,6 +90,12 @@ namespace bd8.Views
             };
         }
 
+        public string IdForm
+        {
+            get { return txtIdForm.Text; }
+            set { txtIdForm.Text = value; }
+        }
+
         public string FormName
         {
             get { return txtFormName.Text; }

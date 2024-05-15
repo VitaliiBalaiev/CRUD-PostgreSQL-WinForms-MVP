@@ -93,7 +93,11 @@ namespace bd8.Views
                 ResetFilters?.Invoke(this, EventArgs.Empty);
             };
         }
-
+        public string IdTeacher
+        {
+            get { return txtIdTeacher.Text; }
+            set { txtIdTeacher.Text = value; }
+        }
         public string Surname
         {
             get { return txtTeacherSurname.Text; }
@@ -163,22 +167,7 @@ namespace bd8.Views
 
         public void SetTeacherListBindingSource(BindingSource teacherList)
         {
-            //DataGridView dataGridView2 = new DataGridView();
             dataGridView2.DataSource = teacherList;
-            // dataGridView2.ColumnCount = 8;
-            //dataGridView2.Columns[0].Name = "ID Teacher";
-            //dataGridView2.Columns[1].Name = "Surname";
-            //dataGridView2.Columns[2].Name = "Name";
-            //dataGridView2.Columns[3].Name = "Patronymic";
-            //dataGridView2.Columns[4].Name = "Date of birth";
-            //dataGridView2.Columns[5].Name = "Gender";
-            //dataGridView2.Columns[6].Name = "ID Degree";
-            //dataGridView2.Columns[7].Name = "Degree";
-            //dataGridView2.Columns[8].Name = "ID School";
-            //dataGridView2.Columns[9].Name = "School name";
-            //dataGridView2.Columns["ID Degree"].Visible = false;
-            //dataGridView2.Columns["ID School"].Visible = false;
-
         }
 
         private static TeacherView instance;

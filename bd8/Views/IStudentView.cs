@@ -9,6 +9,7 @@ namespace bd8.Views
 {
     public interface IStudentView
     {
+        string IdStudent { get; set; }
         string Surname { get; set; }
         string StudentName { get; set; }
         string Patronymic { get; set; }

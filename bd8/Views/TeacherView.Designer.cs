@@ -45,6 +45,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtTeacherSearch = new System.Windows.Forms.TextBox();
             this.tabTeacherDetails = new System.Windows.Forms.TabPage();
+            this.schoolComboBox = new System.Windows.Forms.ComboBox();
+            this.genderComboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTeacherDegree = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -59,8 +61,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTeacherName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.genderComboBox = new System.Windows.Forms.ComboBox();
-            this.schoolComboBox = new System.Windows.Forms.ComboBox();
+            this.txtIdTeacher = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabTeacherList.SuspendLayout();
@@ -285,6 +287,8 @@
             // 
             // tabTeacherDetails
             // 
+            this.tabTeacherDetails.Controls.Add(this.txtIdTeacher);
+            this.tabTeacherDetails.Controls.Add(this.label9);
             this.tabTeacherDetails.Controls.Add(this.schoolComboBox);
             this.tabTeacherDetails.Controls.Add(this.genderComboBox);
             this.tabTeacherDetails.Controls.Add(this.label1);
@@ -309,11 +313,38 @@
             this.tabTeacherDetails.Text = "Деталі";
             this.tabTeacherDetails.UseVisualStyleBackColor = true;
             // 
+            // schoolComboBox
+            // 
+            this.schoolComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.schoolComboBox.FormattingEnabled = true;
+            this.schoolComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
+            this.schoolComboBox.Location = new System.Drawing.Point(136, 622);
+            this.schoolComboBox.Name = "schoolComboBox";
+            this.schoolComboBox.Size = new System.Drawing.Size(341, 33);
+            this.schoolComboBox.TabIndex = 21;
+            // 
+            // genderComboBox
+            // 
+            this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.genderComboBox.FormattingEnabled = true;
+            this.genderComboBox.Items.AddRange(new object[] {
+            "M",
+            "F"});
+            this.genderComboBox.Location = new System.Drawing.Point(136, 437);
+            this.genderComboBox.Name = "genderComboBox";
+            this.genderComboBox.Size = new System.Drawing.Size(341, 33);
+            this.genderComboBox.TabIndex = 20;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(135, 586);
+            this.label1.Location = new System.Drawing.Point(135, 575);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 36);
             this.label1.TabIndex = 18;
@@ -321,7 +352,7 @@
             // 
             // txtTeacherDegree
             // 
-            this.txtTeacherDegree.Location = new System.Drawing.Point(136, 538);
+            this.txtTeacherDegree.Location = new System.Drawing.Point(136, 527);
             this.txtTeacherDegree.Name = "txtTeacherDegree";
             this.txtTeacherDegree.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherDegree.TabIndex = 15;
@@ -330,7 +361,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(130, 491);
+            this.label8.Location = new System.Drawing.Point(130, 480);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(115, 36);
             this.label8.TabIndex = 14;
@@ -338,7 +369,7 @@
             // 
             // dateTeacherPicker
             // 
-            this.dateTeacherPicker.Location = new System.Drawing.Point(136, 354);
+            this.dateTeacherPicker.Location = new System.Drawing.Point(136, 343);
             this.dateTeacherPicker.Name = "dateTeacherPicker";
             this.dateTeacherPicker.Size = new System.Drawing.Size(341, 33);
             this.dateTeacherPicker.TabIndex = 12;
@@ -349,7 +380,7 @@
             this.btnCancelTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCancelTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnCancelTeacher.Location = new System.Drawing.Point(328, 735);
+            this.btnCancelTeacher.Location = new System.Drawing.Point(328, 716);
             this.btnCancelTeacher.Name = "btnCancelTeacher";
             this.btnCancelTeacher.Size = new System.Drawing.Size(149, 48);
             this.btnCancelTeacher.TabIndex = 11;
@@ -362,7 +393,7 @@
             this.btnSaveChangesTeacher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSaveChangesTeacher.Font = new System.Drawing.Font("Source Sans Pro SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnSaveChangesTeacher.ForeColor = System.Drawing.Color.White;
-            this.btnSaveChangesTeacher.Location = new System.Drawing.Point(136, 735);
+            this.btnSaveChangesTeacher.Location = new System.Drawing.Point(136, 716);
             this.btnSaveChangesTeacher.Name = "btnSaveChangesTeacher";
             this.btnSaveChangesTeacher.Size = new System.Drawing.Size(149, 48);
             this.btnSaveChangesTeacher.TabIndex = 10;
@@ -373,7 +404,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(130, 398);
+            this.label7.Location = new System.Drawing.Point(130, 387);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(90, 36);
             this.label7.TabIndex = 8;
@@ -383,7 +414,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(130, 306);
+            this.label5.Location = new System.Drawing.Point(130, 295);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 36);
             this.label5.TabIndex = 6;
@@ -391,7 +422,7 @@
             // 
             // txtTeacherPatronymic
             // 
-            this.txtTeacherPatronymic.Location = new System.Drawing.Point(136, 255);
+            this.txtTeacherPatronymic.Location = new System.Drawing.Point(136, 244);
             this.txtTeacherPatronymic.Name = "txtTeacherPatronymic";
             this.txtTeacherPatronymic.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherPatronymic.TabIndex = 5;
@@ -400,7 +431,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(130, 211);
+            this.label6.Location = new System.Drawing.Point(130, 200);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(170, 36);
             this.label6.TabIndex = 4;
@@ -408,7 +439,7 @@
             // 
             // txtTeacherSurname
             // 
-            this.txtTeacherSurname.Location = new System.Drawing.Point(136, 82);
+            this.txtTeacherSurname.Location = new System.Drawing.Point(136, 71);
             this.txtTeacherSurname.Name = "txtTeacherSurname";
             this.txtTeacherSurname.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherSurname.TabIndex = 3;
@@ -417,7 +448,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(130, 38);
+            this.label4.Location = new System.Drawing.Point(130, 27);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(141, 36);
             this.label4.TabIndex = 2;
@@ -426,7 +457,7 @@
             // 
             // txtTeacherName
             // 
-            this.txtTeacherName.Location = new System.Drawing.Point(136, 167);
+            this.txtTeacherName.Location = new System.Drawing.Point(136, 156);
             this.txtTeacherName.Name = "txtTeacherName";
             this.txtTeacherName.Size = new System.Drawing.Size(341, 33);
             this.txtTeacherName.TabIndex = 1;
@@ -435,38 +466,31 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(130, 123);
+            this.label3.Location = new System.Drawing.Point(130, 112);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 36);
             this.label3.TabIndex = 0;
             this.label3.Text = "Ім\'я:";
             // 
-            // genderComboBox
+            // txtIdTeacher
             // 
-            this.genderComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.genderComboBox.FormattingEnabled = true;
-            this.genderComboBox.Items.AddRange(new object[] {
-            "M",
-            "F"});
-            this.genderComboBox.Location = new System.Drawing.Point(136, 448);
-            this.genderComboBox.Name = "genderComboBox";
-            this.genderComboBox.Size = new System.Drawing.Size(341, 33);
-            this.genderComboBox.TabIndex = 20;
+            this.txtIdTeacher.Location = new System.Drawing.Point(730, 71);
+            this.txtIdTeacher.Name = "txtIdTeacher";
+            this.txtIdTeacher.Size = new System.Drawing.Size(341, 33);
+            this.txtIdTeacher.TabIndex = 23;
+            this.txtIdTeacher.Visible = false;
             // 
-            // schoolComboBox
+            // label9
             // 
-            this.schoolComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.schoolComboBox.FormattingEnabled = true;
-            this.schoolComboBox.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5"});
-            this.schoolComboBox.Location = new System.Drawing.Point(136, 633);
-            this.schoolComboBox.Name = "schoolComboBox";
-            this.schoolComboBox.Size = new System.Drawing.Size(341, 33);
-            this.schoolComboBox.TabIndex = 21;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(724, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(152, 36);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "ID вчителя:";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label9.Visible = false;
             // 
             // TeacherView
             // 
@@ -522,5 +546,7 @@
         private System.Windows.Forms.Button btnResetFilters;
         private System.Windows.Forms.ComboBox genderComboBox;
         private System.Windows.Forms.ComboBox schoolComboBox;
+        private System.Windows.Forms.TextBox txtIdTeacher;
+        private System.Windows.Forms.Label label9;
     }
 }

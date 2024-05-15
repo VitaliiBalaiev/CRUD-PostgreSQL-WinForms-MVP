@@ -49,6 +49,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtNumberOfStudents = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.txtIdForm = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl3.SuspendLayout();
             this.tabFormList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -225,6 +227,8 @@
             // 
             // tabFormDetails
             // 
+            this.tabFormDetails.Controls.Add(this.txtIdForm);
+            this.tabFormDetails.Controls.Add(this.label1);
             this.tabFormDetails.Controls.Add(this.btnCancel);
             this.tabFormDetails.Controls.Add(this.btnSaveChanges);
             this.tabFormDetails.Controls.Add(this.txtIdTeacher);
@@ -319,6 +323,26 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Кількість учнів:";
             // 
+            // txtIdForm
+            // 
+            this.txtIdForm.Location = new System.Drawing.Point(630, 89);
+            this.txtIdForm.Name = "txtIdForm";
+            this.txtIdForm.Size = new System.Drawing.Size(341, 33);
+            this.txtIdForm.TabIndex = 13;
+            this.txtIdForm.Visible = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Source Sans Pro", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(624, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 36);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "ID класу:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Visible = false;
+            // 
             // FormView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -360,5 +384,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNumberOfStudents;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtIdForm;
+        private System.Windows.Forms.Label label1;
     }
 }
